@@ -33,7 +33,7 @@ int	is_valid_visibility(int row, int col)
 		if (visible_left(g_grid, g_grid_siz, row) != g_clues[2][row])
 			return (0);
 	}
-	else if (row == g_grid_siz - 1)
+	if (row == g_grid_siz - 1)
 	{
 		if (visible_down(g_grid, g_grid_siz, col) != g_clues[1][col])
 			return (0);
